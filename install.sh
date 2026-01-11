@@ -22,7 +22,7 @@ apt install -y curl iptables net-tools
 mkdir -p /etc/zivpn /var/log/zivpn
 
 # download tools
-curl -fsSL https://raw.githubusercontent.com/<USERNAME>/<REPO>/main/tools/download-bin.sh -o /tmp/dl.sh
+curl -fsSL https://raw.githubusercontent.com/kiel-p/zivpn-udp-stable/main/tools/download-bin.sh -o /tmp/dl.sh
 bash /tmp/dl.sh
 
 # systemd
