@@ -26,7 +26,7 @@ curl -fsSL https://raw.githubusercontent.com/kiel-p/zivpn-udp-stable/main/tools/
 bash /tmp/dl.sh
 
 # systemd
-curl -fsSL https://raw.githubusercontent.com/kiel-p/zivpn-udp-stable/main/systemd/zivpn-udp.service \
+curl -fsSL https://raw.githubusercontent.com/Kiel-p/zivpn-udp-stable/main/systemd/zivpn-udp.service \
 -o /etc/systemd/system/zivpn-udp.service
 
 sed -i "s/PORT/$PORT/g" /etc/systemd/system/zivpn-udp.service
