@@ -1,0 +1,11 @@
+[Unit]
+Description=BadVPN UDPGW
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/badvpn-udpgw --listen-addr 127.0.0.1:7300
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
