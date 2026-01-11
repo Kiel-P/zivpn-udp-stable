@@ -1,0 +1,6 @@
+{
+  "listen": ":5667",
+  "mode": "udp",
+  "log_level": "info",
+  "udp_timeout": 60
+}
