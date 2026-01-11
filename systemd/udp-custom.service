@@ -1,0 +1,12 @@
+[Unit]
+Description=ZIVPN UDP Custom Server
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/udp-custom server -c /etc/zivpn/udp-custom.json
+Restart=always
+RestartSec=2
+LimitNOFILE=1048576
+
+[Install]
+WantedBy=multi-user.target
